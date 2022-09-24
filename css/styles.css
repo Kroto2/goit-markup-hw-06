@@ -538,9 +538,6 @@ ul {
 .form-input-description:focus>.form-icons {
     fill: var(--blue); 
 } 
-.form-input-description{
-
-}
 .comment{
     resize: none;
     width: 448px;
