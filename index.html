@@ -382,11 +382,82 @@
                 </li>
             </ul>
         </div>
+            <div>
+                <h4 class="sign-up-header">ZAPISZ SIĘ DO NEWSLETTERA</h4>
+                <div class="sign-up-container">
+                <input type="text" class="sign-up" placeholder="E-mail"/>
+                <button type="submit" class="sign-up-button"><span class="sign-up-btn-text">Zapisz się</span>
+                <svg class="sign-up-svg">
+                    <use xlink:href="./images/icons.svg#icon-send"
+                    width="24"
+                    height="24"
+                    x="100"
+                    y="4"
+                    ></use>
+                </svg>
+                </button>
+                </div>
+            </div>
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="close-button" type="button" data-modal-close>X</button>
+            <h6 class="form-header">Zostaw swoje dane w formularzu poniżej</h6>
+            <label for="users-name" class="form-input-description">
+                Imie
+                <svg class="form-icons position1">
+                    <use xlink:href="./images/icons.svg#icon-person"
+                    width="12"
+                    height="12"
+                    ></use>
+                </svg>
+                <input name="user-name" type="text" class="form-input" id="users-name"/>
+            </label>
+            <label for="phone-number" class="form-input-description">
+                Telefon
+                <svg class="form-icons position2">
+                    <use xlink:href="./images/icons.svg#icon-phone"
+                    width="13"
+                    height="13">
+                </use>
+                </svg>
+                <input type="tel" name="phone-number" class="form-input" id="phone-number"/>
+            </label>
+            <label for="email" class="form-input-description">
+                Email
+                <svg class="form-icons position3">
+                    <use xlink:href="./images/icons.svg#icon-email"
+                    width="15"
+                    height="12">
+                    </use>
+                </svg>
+                <input type="email" name="email" class="form-input" id="email"/>
+            </label>
+            <label>
+                Komentarz
+                <textarea name="comment"
+                placeholder="Wprowadź tekst"
+                class="form-input comment">
+                </textarea>
+            </label>
+            <label class="terms-of">
+                <input type="checkbox"/>
+                <svg class="check-svg">
+                    <use xlink:href="./images/icons.svg#icon-tick"
+                    width="11"
+                    height="8"
+                    x="1"
+                    y="3">
+                    </use>
+                </svg>
+                <span class="check-text"></span> Oświadczam iż akceptuję
+                <a href="#" class="blue-text">Regulamin</a> i
+                <a href="#" class="blue-text">Politykę Prywatności.</a>
+            </label>
+            <label>
+                <button type="submit" class="submit-button">Wyślij</button>
+            </label>
         </div>
     </div>
     <script src="./js/modal.js"></script>

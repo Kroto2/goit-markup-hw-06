@@ -30,6 +30,9 @@ body {
 .Logo>span {
     color:blue;
 }
+.blue-text{
+    color: var(--blue);
+}
 ul {
     list-style: none;
 }
@@ -413,6 +416,56 @@ ul {
     cursor: pointer;
     caret-color: var(--black);
 }
+.sign-up-header {
+    font-weight: 700;
+    color: var(--white);
+    text-transform: uppercase;
+    margin: 20px 0 20px 78px;
+    font-weight: 14px;
+}
+.sign-up-container{
+    display: flex;
+    flex-direction: row;
+}
+.sign-up {
+    background-color: rgba(0, 0, 0, 0);
+    border: solid rgba(255, 255, 255, 0.3) 1px;
+    border-radius: 4px;
+    width: 358px;
+    height: 50px;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 16px;
+    margin-left: 74px;
+    font-size: 16px;
+    margin-top 0;
+}
+.sign-up-button {
+    background-color: var(--blue);
+    color: var(--white);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    width: 200px;
+    height: 50px;
+    align-items: baseline;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 4px;
+    border-style: none;
+    margin-left: 12px;
+    text-align: left;
+    padding-left: 42px;
+    cursor: pointer;
+}
+.sign-up-btn-text{
+    position: absolute;
+    align-items: center;
+    justify-items: center;
+    margin-top: 5px;
+}
+.sign-up-svg {
+    width: 150px;
+    height: 24px;
+    fill: var(--white);
+}
 .section{
     margin: 94px 0 94px 0;
 }
@@ -423,6 +476,7 @@ ul {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
+    transition: all 250ms ease-in;
 }
 .modal{
     position: absolute;
@@ -432,6 +486,12 @@ ul {
     width:528px;
     min-height: 581px;
     background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    gap: 10px;
+    color: var(--main-text-color);
 }
 .close-button{
     position: absolute;
@@ -448,4 +508,133 @@ ul {
     opacity: 0;
     visibility: hidden;
     pointer-events:none;
+    transition: all 250ms ease-in;
+}
+.form-header{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.172;
+    color: var(--header-black);
+    margin: 40px 0 20px 0;
+}
+.form-input{
+    width: 448px;
+    height: 40px;
+    display: block;
+    margin: 4px 0 0 0;
+    border-radius: 4px;
+    border: rgba(33, 33, 33, 0.2) 1px solid;
+    padding: 0 0 0 30px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-input-description:hover>.form-input,
+.form-input-description:focus>.form-input {
+    border: var(--blue) 1px solid;
+    box-shadow: none;
+    outline: none;
+}
+.form-input-description:hover>.form-icons,
+.form-input-description:focus>.form-icons {
+    fill: var(--blue); 
+} 
+.form-input-description{
+
+}
+.comment{
+    resize: none;
+    width: 448px;
+    height: 120px;
+    padding: 12px 16px;
+    border-radius: 4px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.comment:hover,
+.comment:focus,
+.comment:active {
+    border: var(--blue) 1px solid;
+    box-shadow: none;
+    outline: none;
+}
+.form-icons {
+    fill: var(--notblack);
+    width: 15px;
+    height: 13px;
+    position: absolute;
+}
+.position1{
+    top: 125px;
+    left: 52px;
+}
+.position2{
+    top: 194px;
+    left: 52px;
+}
+.position3{
+    top: 260px;
+    left: 52px;
+}
+.form-svg{
+    fill: var(--header-black);
+    width: 15px;
+    height: 13px;
+    position: absolute;
+}
+.terms-of{
+    font-size: 14px;
+    padding: 20px 0 30px 0;
+}
+.check-svg{
+    fill: var(--white);
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 48px;
+    top: 464px;
+    z-index: 99;
+}
+.submit-button{
+    background-color: var(--blue);
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    border: none;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+.submit-button:hover {
+    background-color: #1a78c2;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.submit-button:active {
+    background-color: #135a91;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.terms-of input{
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+.check-text{
+    position: absolute;
+    cursor: pointer;
+    top: 464px;
+    left: 48px;
+    height: 16px;
+    width: 16px;
+    border-radius: 4px;
+    background-color: var(--white);
+    border: var(--header-black) 2px solid;
+}
+input:checked +.check-svg {
+    display: block;
+    fill: var(--white);
+    border: none;
+    background-color: var(--blue);
+    border-radius: 3px;
+    cursor: pointer;
 }
