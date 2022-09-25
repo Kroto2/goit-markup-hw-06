@@ -30,9 +30,6 @@ body {
 .Logo>span {
     color:blue;
 }
-.blue-text{
-    color: var(--blue);
-}
 ul {
     list-style: none;
 }
@@ -454,6 +451,10 @@ ul {
     text-align: left;
     padding-left: 42px;
     cursor: pointer;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.sign-up-button:hover,.sign-up-button:focus,.sign-up-button:active{
+    background-color: #135a91;
 }
 .sign-up-btn-text{
     position: absolute;
@@ -503,6 +504,11 @@ ul {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.close-button:hover,
+.close-button:focus{
+    background-color:#AFB1B8;
 }
 .is-hidden{
     opacity: 0;
@@ -601,20 +607,30 @@ ul {
     font-size: 16px;
     cursor: pointer;
     margin-bottom: 40px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .submit-button:hover {
-    background-color: #1a78c2;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: #135a91;
 }
 .submit-button:active {
     background-color: #135a91;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.submit-button:focus{
+    background-color: #135a91;
 }
 .terms-of input{
     position: absolute;
     opacity: 0;
     height: 0;
     width: 0;
+}
+.blue-text {
+    color: var(--blue);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.blue-text:hover,.blue-text:focus,.blue-text:active{
+    color:#135a91;
 }
 .check-text{
     position: absolute;
